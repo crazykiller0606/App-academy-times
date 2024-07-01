@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure items stretch to the full height of the container */
+    padding: 20px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    position: relative; /* Ensure positioning context for pseudo-elements */
+    padding-right: 10px;
+    flex-grow: 1; /* Allow items to grow to fill the container height */
+  }
+  
+  .item::before {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: black;
+  }
+  
+  .item:last-child::before {
+    display: none; /* Remove border from the last item */
+  }
+  
+  .item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .text h2 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .text p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 0 10px;
+  }
+  
+  table td {
+    padding: 5px 10px;
+    border-bottom: 1px solid gainsboro; 
+    text-align: center;
+  }
+  
+  table td:nth-child(2) {
+    color: green;
+    font-weight: bold;
+  }
+  

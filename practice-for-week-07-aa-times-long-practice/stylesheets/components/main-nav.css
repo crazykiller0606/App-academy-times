@@ -1,0 +1,20 @@
+.main__nav .nav-list {
+    display: flex;
+    justify-content: center; /* Adjust as needed */
+    list-style: none; /* Ensures no bullet points */
+    text-align: center;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  
+  .main__nav .nav-list li a {
+    text-decoration: none !important; /* Remove underline from links */
+    color: black !important; /* Change link color to black */
+    padding: 10px 15px; /* Add padding for better click area */
+  }
+  
+  .main__nav .nav-list li a:hover {
+    background-color: #f0f0f0; /* Add a hover effect */
+    border-radius: 4px; /* Optional: add rounded corners */
+  }

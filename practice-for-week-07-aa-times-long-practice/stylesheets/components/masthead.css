@@ -1,0 +1,108 @@
+/* Your code here */
+.masthead {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Three columns: equal space on both sides of the middle */
+    grid-template-rows: auto auto auto; 
+    gap: 10px; /* Optional: Add some gap between the grid items */
+    padding: 10px 0; /* Adjust padding for the entire masthead if needed */
+  }
+  
+  .masthead__actions {
+    grid-column: 3 / 4; /* Span from third to fourth column (right side) */
+    grid-row: 1 / 2; /* Span from first to second row */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    gap: 10px; /* Add some space between the elements */
+    padding: 10px 20px; /* Add padding above and below the buttons */
+  }
+
+  .masthead__actions button {
+    background-color: #6288a5; /* Blue background color */
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 7px 9px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+
+  .masthead__button-icon {
+    font-size: 11px;
+    padding: 7px 9px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .masthead__button-icon:hover {
+    background-color: #f0f0f0; /* Replace with the lightest gray value from styles.md */
+  }
+
+
+
+  .masthead__technologies {
+    grid-column: 2 / 3; /* Span from second to third column (middle) */
+    grid-row: 1 / 2; /* Span from first to second row */
+    padding: 0 10px; /* Add horizontal padding inside the technologies container */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  .technologies-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Adjust margin between the span elements */
+    border-top: 1px solid #f0f0f0; /* Light gray border on top */
+    border-left: 1px solid #f0f0f0; /* Light gray border on left */
+    border-right: 1px solid #f0f0f0; /* Light gray border on right */
+  }
+  
+  .technology {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #333333; /* Replace with the dark gray value from styles.md */
+    padding: 10px; /* Add padding around each technology word */
+  }
+  
+  .masthead__logo {
+    grid-column: 2 / 3; /* Span from second to third column (middle) */
+    grid-row: 3 / 4; /* Span from third to fourth row (bottom) */
+    display: flex;
+    align-items: center; /* Align logo to the bottom */
+    justify-content: center; /* Center logo horizontally */
+    padding-top: 20px; /* Add padding to increase height of third row */
+    padding-bottom: 11px;
+    border-top: 1px solid #f0f0f0; /* Light gray border on top */
+    border-bottom: 1px solid #f0f0f0; 
+  }
+  
+  .masthead__date {
+    grid-column: 1 / 2; /* Span from first to second column (left side) */
+    grid-row: 3 / 4; /* Span from third to fourth row (bottom) */
+    display: flex;
+    align-items: flex-end; /* Align date to the bottom */
+    padding-left: 20px; /* Add padding for left corner */
+    padding-bottom: 11px; /* Add padding at the bottom to create space */
+    font-size: 11px; /* Set font size to 11px */
+    border-top: 1px solid #f0f0f0; /* Light gray border on top */
+    border-bottom: 1px solid #f0f0f0; /
+  }
+  
+  .masthead__paper {
+    grid-column: 3 / 4; /* Span from third to fourth column (right side) */
+    grid-row: 3 / 4; /* Span from third to fourth row (bottom) */
+    display: flex;
+    align-items: flex-end; /* Align paper to the bottom */
+    justify-content: flex-end; /* Align paper to the right */
+    padding-right: 20px; /* Add padding for right corner */
+    font-size: 11px; /* Set font size to 11px */
+    border-top: 1px solid #f0f0f0; /* Light gray border on top */
+    border-bottom: 1px solid #f0f0f0; /* Light gray border on bottom */
+    padding-bottom: 11px;
+  }
